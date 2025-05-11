@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in LateX
+% Author : Mohammad Ammar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://linktr.ee/ammarvellous/}{\Large Mohammad Ammar}} & Email: \href{mailto:mdammar1612@gmail.com}{mdammar1612@gmail.com}\\
+  Github: \href{https://github.com/Ammarvellous/}{github.com/Ammarvellous} & Mobile: \href{tel:+917365993869}{+91-7365993869} \\
+  LinkedIn: \href{https://www.linkedin.com/in/mohammad-ammar369/}{linkedin.com/in/mohammad-ammar369/}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Bhopal, India}
+      {Bachelor of Technology - Computer Science and Engineering; GPA: 9.09}{Aug 2022 -- Aug 2026}
+    \resumeSubheading
+      {St. Patrick's Higher Secondary School}{Asansol, India}
+      {ISCE: Percentile: 88.2}{May 2020 -- May 2021}
+    \resumeSubheading
+      {St. Patrick's Higher Secondary School}{Asansol, India}
+      {ICSE: Percentile: 94.6}{May 2018 -- May 2019}
+  \resumeSubHeadingListEnd
+
+% --------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, JavaScript, Java, SQL, C++}
+   }
+   \item{
+     \textbf{Technologies}{: AWS, GitHub, GitLens, Docker}
+   }
+   \item{
+     \textbf{Tools and Frameworks}{: TensorFlow, OpenCV, FastAPI, MongoDB Atlas, Langchain, React, Node.js}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Detection of ADHD disease}
+      {Developed an advanced deep learning framework integrating spatial and temporal fMRI scan data, reducing diagnostic time by 40\% for clinical practitioners.}
+    \resumeSubItem{Craft Connect}
+      {Developed a full-stack local services platform that connects users with professionals like electricians, plumbers, and carpenters. Engineered a serverless backend utilizing Node.js, increasing API response rate by 60ms and enabling the application to handle 500 concurrent users with zero downtime. Implemented an AI chatbot for instant user queries, geolocation-based service matching, and dynamic pricing algorithms for cost optimization.
+}
+    \resumeSubItem{Insight Scraper}
+      {Built a web-based intelligent scraper that integrates LLMs and web automation to extract and analyze structured data from any website.}
+    \resumeSubItem{AutoDoc-AI Code Commenter}
+      {Built a Generative AI-based tool using IBM WatsonX.ai and Granite Code models to automatically generate natural-language comments for Python code. Integrated the model via Python SDK with a Streamlit interface for real-time interaction. Conducted thorough testing for accuracy, contextual relevance, and system robustness.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Club}{VIT, Bhopal}
+      {Core Member}{Oct 2023 -- Apr 2025}
+      \resumeItemListStart
+        \resumeItem{Project Development}
+          {Spearheaded the development of 3+ AI-driven projects and organized technical workshops, hackathons, and interactive sessions, engaging and impacting 100+ participants across the university.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indian Space Lab}{Bhopal, India}
+      {Intern}{Dec 2024 -- Jan 2025}
+      \resumeItemListStart
+        \resumeItem{Satellite Data Analysis}
+          {Developed a framework for automated quality control of satellite data, flagging over 1,000 anomalies per month and ensuring data integrity for downstream applications.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------INDUSTRIAL CERTIFICATIONS-----------------
+\section{Industrial Internship and Certification}
+  \resumeSubHeadingListStart
+    \resumeSubItem{AWS Solutions Architect - Associate Internship Program}
+      {Gained hands-on experience in designing, deploying, and optimizing secure, scalable cloud architectures on AWS}
+    \resumeSubItem{GEN AI Using IBM Watsonx}
+      {Acquired practical skills in building, deploying, and managing generative AI models and solutions on the IBM Watsonx platform.}
+    \resumeSubItem{The Bits and Bytes of Computer Networking, Google}
+      {Developed foundational knowledge in networking protocols, cloud computing, and troubleshooting network issues.}
+    \resumeSubItem{Cloud Computing, IIT Kharagpur}
+      {Gained comprehensive understanding of cloud service models, virtualization, and distributed systems architecture.}
+      
+  \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL-----------------
+
+% \section{Additional}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: English, Hindi, Bengali}
+%    }
+%    \item{
+%      \textbf{Hobbies}{: Coding Mini Projects, Learning emerging technologies, Problem solving}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+% -------------------------------------------
+
+
+\end{document}
